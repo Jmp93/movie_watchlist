@@ -138,7 +138,8 @@ body {
   gap: 2rem;
 }
 
-.add-btn {
+.add-btn,
+.remove-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -149,7 +150,8 @@ body {
   cursor: pointer;
 }
 
-.add-btn img {
+.add-btn img,
+.remove-btn img {
   height: 25px;
   width: 25px;
 }
@@ -175,4 +177,8 @@ body {
 .placeholder-content p {
   font-size: 1.6rem;
   color: grey;
+}
+
+.added {
+  color: rgb(77, 163, 20);
 }
