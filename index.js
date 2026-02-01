@@ -37,13 +37,15 @@ function handleAddBtn(addId, btnElement) {
 }
 
 async function getMovies(title) {
-  const res = await fetch(`http://www.omdbapi.com/?apikey=b7e8ec40&s=${title}`);
+  const res = await fetch(
+    `https://www.omdbapi.com/?apikey=b7e8ec40&s=${title}`,
+  );
   const data = await res.json();
 
   if (data.Search) {
     const moviePromises = data.Search.map(async movie => {
       const detailRes = await fetch(
-        `http://www.omdbapi.com/?apikey=b7e8ec40&i=${movie.imdbID}`,
+        `https://www.omdbapi.com/?apikey=b7e8ec40&i=${movie.imdbID}`,
       );
       return detailRes.json();
     });
