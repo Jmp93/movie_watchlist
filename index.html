@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Watchlist | Search</title>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container header-content">
+        <h1>Find your film</h1>
+        <a href="watchlist.html" class="nav-link">My Watchlist</a>
+      </div>
+
+      <form id="search-form" class="search-form container">
+        <input
+          type="text"
+          name="movieSeaarch"
+          id="search-bar"
+          placeholder="Search for a movie"
+          required
+        />
+        <button type="submit" id="search-btn">Search</button>
+      </form>
+    </header>
+
+    <main id="movie-results-container"></main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  background-image: url('./img/bg-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.search-form {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  z-index: 10;
+  background-color: #2e2e2e;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#search-bar {
+  flex-grow: 1;
+  background: transparent;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  color: #fff;
+  border: none;
+  background-image: url(./img/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  padding-left: 2.8125rem;
+}
+
+#search-btn {
+  background-color: #4b4b4b;
+  border: none;
+  padding: 0 4rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#search-btn:hover {
+  background-color: #5a5a5a;
+}
