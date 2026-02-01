@@ -26,6 +26,7 @@ body {
 .container {
   width: 90%;
   max-width: 700px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -90,4 +91,88 @@ body {
 
 #search-btn:hover {
   background-color: #5a5a5a;
+}
+
+/********** MOVIE RESULTS **********/
+
+.inner-content {
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 2px solid rgb(92, 92, 92);
+  gap: 2rem;
+}
+
+.inner-content:first-child {
+  padding-top: 6rem;
+}
+
+.movie-poster {
+  width: 200px;
+  object-fit: cover;
+}
+
+.inner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.title-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.title-rating img {
+  width: 20px;
+  height: 20px;
+}
+
+.movie-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.add-btn img {
+  height: 25px;
+  width: 25px;
+}
+
+.desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: grey;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.placeholder-content {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.placeholder-content p {
+  font-size: 1.6rem;
+  color: grey;
 }
